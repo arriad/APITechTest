@@ -5,14 +5,13 @@ using ARiad.APITech.Application.Models;
 namespace ARiad.APITech.WebAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
     public class CompanyController : Controller
     {
 
-        [HttpGet(Name = "GetCompany")]
-        public CompanyResponse Get()
+        [HttpGet("company/{companyId}")]
+        public Company Get(int companyId)
         {
-            return new CompanyResponse();
+            return new Company();
         }
 
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ARiad.APITech.Application.Models
 {
-    public class CompanyResponse
+    public class Company
     {
         public string CompanyName { get; set; }
         public bool IsActive { get; set; }

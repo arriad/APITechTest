@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace ARiad.APITech.Application.Models
 {
-    internal class ClaimDetailResponse
+    internal class Claim
     {
+        public string ClaimId { get; set; }
         public int CompanyID { get; set; }
-        public int ClaimAgeInDays { get;set; }
+        public int? ClaimAgeInDays { get;set; }
     }
 }
