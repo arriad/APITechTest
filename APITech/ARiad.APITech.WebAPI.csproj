@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ARiad.APITech.Application\ARiad.APITech.Application.csproj" />
+    <ProjectReference Include="..\ARiad.APITech.Domain\ARiad.APITech.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

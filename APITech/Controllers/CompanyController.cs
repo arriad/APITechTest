@@ -1,6 +1,6 @@
 ﻿using APITech;
 using Microsoft.AspNetCore.Mvc;
-using ARiad.APITech.Application.Models;
+using ARiad.APITech.Application.Models.Response;
 
 namespace ARiad.APITech.WebAPI.Controllers
 {

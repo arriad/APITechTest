@@ -1,3 +1,6 @@
+using ARiad.APITech.Application.Interfaces;
+using ARiad.APITech.Infrastructure.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddTransient<IDataManager, DataManager>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
