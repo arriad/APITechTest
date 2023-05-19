@@ -17,6 +17,8 @@ namespace ARiad.Tech.UnitTests
          var result= await   _sut.GetCompany(1);
             Assert.NotNull(result);
             Assert.Equal("CompanyA", result.Name);
+            Assert.Equal("LS1 1AB", result.Postcode);
+            Assert.True(result.Active);
         }
     }
 }
