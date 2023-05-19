@@ -1,38 +1,38 @@
- [
-    {
-      "UCR": "ClaimA",
-      "CompanyId": "1",
-      "ClaimDate": "2022-11-09",
-      "LossDate": "2022-10-04",
-      "AssuredName": "",
-      "IncurredLoss": "",
-      "Closed": "1"
-    },
-    {
-      "UCR": "ClaimB",
-      "CompanyId": "2",
-      "ClaimDate": "",
-      "LossDate": "",
-      "AssuredName": "",
-      "IncurredLoss": "",
-      "Closed": "1"
-    },
-    {
-      "UCR": "ClaimC",
-      "CompanyId": "2",
-      "ClaimDate": "2011-01-05",
-      "LossDate": "2010-09-01",
-      "AssuredName": "",
-      "IncurredLoss": "",
-      "Closed": "0"
-    },
-    {
-      "UCR": "ClaimD",
-      "CompanyId": "3",
-      "ClaimDate": "",
-      "LossDate": "",
-      "AssuredName": "",
-      "IncurredLoss": "",
-      "Closed": "0"
-    }
-  ]
+[
+  {
+    "UCR": "ClaimA",
+    "CompanyId": "1",
+    "ClaimDate": "2022-11-09",
+    "LossDate": "2022-10-04",
+    "AssuredName": "",
+    "IncurredLoss": "",
+    "Closed": true
+  },
+  {
+    "UCR": "ClaimB",
+    "CompanyId": "2",
+    "ClaimDate": "",
+    "LossDate": "",
+    "AssuredName": "",
+    "IncurredLoss": "",
+    "Closed": true
+  },
+  {
+    "UCR": "ClaimC",
+    "CompanyId": "2",
+    "ClaimDate": "2011-01-05",
+    "LossDate": "2010-09-01",
+    "AssuredName": "",
+    "IncurredLoss": "",
+    "Closed": false
+  },
+  {
+    "UCR": "ClaimD",
+    "CompanyId": "3",
+    "ClaimDate": "",
+    "LossDate": "",
+    "AssuredName": "",
+    "IncurredLoss": "",
+    "Closed": false
+  }
+]

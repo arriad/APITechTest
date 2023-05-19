@@ -23,8 +23,8 @@ namespace ARiad.APITech.Application.Mappers
         public static List<Response.Claim> MapClaims(List<Database.Claim> source)
         {
             List<Response.Claim> claims = new List<Response.Claim>();
-            foreach (Database.Claim claim in source) { 
-                claims.Add(MapClaim(claim))
+            foreach (Database.Claim claim in source) {
+                claims.Add(MapClaim(claim));
             }
 
             return claims;

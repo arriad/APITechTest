@@ -13,16 +13,16 @@ namespace ARiad.APITech.WebAPI.Controllers
             _dataManagerService = dataManagerService;
         }
 
-        [HttpGet("claim/{claimId}")]
-        public Claim Get(string claimId)
+        [HttpGet("claim/{ucr}")]
+        public async Task<Claim> Get(string ucr)
         {
-            return _dataManagerService.getcl
+            return await _dataManagerService.GetClaim(ucr);
         }
 
         [HttpGet("claims/{companyId}")]
-        public List<Claim> GetClaims(int companyId)
+        public async Task<List<Claim>> GetClaims(int companyId)
         {
-            return null;
+            return await _dataManagerService.GetClaims(companyId);
         }
     }
 }

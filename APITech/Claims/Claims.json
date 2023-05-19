@@ -6,16 +6,16 @@
       "LossDate": "2022-10-04",
       "AssuredName": "",
       "IncurredLoss": "",
-      "Closed": "1"
+      "Closed": true
     },
     {
       "UCR": "ClaimB",
       "CompanyId": "2",
-      "ClaimDate": "",
+      "ClaimDate": "2015-09-06",
       "LossDate": "",
       "AssuredName": "",
       "IncurredLoss": "",
-      "Closed": "1"
+      "Closed": true
     },
     {
       "UCR": "ClaimC",
@@ -24,15 +24,15 @@
       "LossDate": "2010-09-01",
       "AssuredName": "",
       "IncurredLoss": "",
-      "Closed": "0"
+      "Closed": false
     },
     {
       "UCR": "ClaimD",
       "CompanyId": "3",
-      "ClaimDate": "",
+      "ClaimDate": "2023-02-07",
       "LossDate": "",
       "AssuredName": "",
       "IncurredLoss": "",
-      "Closed": "0"
+      "Closed": false
     }
   ]

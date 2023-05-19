@@ -30,9 +30,9 @@ namespace ARiad.APITech.Application.Services
 
             return CompaniesMapper.MapCompany(companyRetrieved);
         }
-        public async Task<Response.Claim> GetClaim(string claimId)
+        public async Task<Response.Claim> GetClaim(string ucr)
         {
-            Database.Claim claimRetrieved = await _dataManager.GetClaim(claimId);
+            Database.Claim claimRetrieved = await _dataManager.GetClaim(ucr);
 
             if (claimRetrieved == null)
             {
@@ -49,7 +49,7 @@ namespace ARiad.APITech.Application.Services
             {
                 return null;
             }
-
+            return ClaimsMapper.MapClaims(claimsRetrieved);
             
         }
     }
