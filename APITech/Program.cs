@@ -1,4 +1,5 @@
 using ARiad.APITech.Application.Interfaces;
+using ARiad.APITech.Application.Services;
 using ARiad.APITech.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped<DataManagerService>();
 builder.Services.AddTransient<IDataManager, DataManager>();
 var app = builder.Build();
 

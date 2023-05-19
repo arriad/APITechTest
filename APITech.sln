@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARiad.APITech.Infrastructur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARiad.APITech.Application", "ARiad.APITech.Application\ARiad.APITech.Application.csproj", "{C1DFADDB-0EE8-414C-852D-115F2A7D1D4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARiad.Tech.UnitTests", "ARiad.Tech.UnitTests\ARiad.Tech.UnitTests.csproj", "{9C2AA172-2953-479B-B092-8136129D004C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C1DFADDB-0EE8-414C-852D-115F2A7D1D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1DFADDB-0EE8-414C-852D-115F2A7D1D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1DFADDB-0EE8-414C-852D-115F2A7D1D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C2AA172-2953-479B-B092-8136129D004C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C2AA172-2953-479B-B092-8136129D004C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C2AA172-2953-479B-B092-8136129D004C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C2AA172-2953-479B-B092-8136129D004C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -14,8 +14,8 @@ namespace ARiad.APITech.Application.Mappers
         {
             return new Response.Company
             {
-                 CompanyName = source.CompanyName,
-                  IsActive = source.IsActive,
+                 CompanyName = source.Name,
+                  IsActive = source.Active,
             };
         }
     }

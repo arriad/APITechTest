@@ -1,0 +1,35 @@
+ [
+    {
+      "Id": "1",
+      "Name": "CompanyA",
+      "Address1": "",
+      "Address2": "",
+      "Address3": "",
+      "Postcode": "",
+      "Country": "UK",
+      "Active": true,
+      "InsuranceEndDate": ""
+    },
+    {
+      "Id": "2",
+      "Name": "CompanyB",
+      "Address1": "",
+      "Address2": "",
+      "Address3": "",
+      "Postcode": "",
+      "Country": "DE",
+      "Active": true,
+      "InsuranceEndDate": ""
+    },
+    {
+      "Id": "3",
+      "Name": "CompanyC",
+      "Address1": "",
+      "Address2": "",
+      "Address3": "",
+      "Postcode": "",
+      "Country": "FR",
+      "Active": false,
+      "InsuranceEndDate": ""
+    }
+  ] 

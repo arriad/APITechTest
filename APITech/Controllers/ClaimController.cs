@@ -1,18 +1,22 @@
-﻿using APITech;
+﻿using ARiad.APITech.Application.Models.Response;
+using ARiad.APITech.Application.Services;
 using Microsoft.AspNetCore.Mvc;
-using ARiad.APITech.Application.Models;
-using System.Security.Claims;
 
 namespace ARiad.APITech.WebAPI.Controllers
 {
     [ApiController]
     public class ClaimController : Controller
     {
+        private readonly DataManagerService _dataManagerService;
+        public ClaimController(DataManagerService dataManagerService)
+        {
+            _dataManagerService = dataManagerService;
+        }
 
         [HttpGet("claim/{claimId}")]
-        public Claim Get(int claimId)
+        public Claim Get(string claimId)
         {
-            return null;
+            return _dataManagerService.getcl
         }
 
         [HttpGet("claims/{companyId}")]

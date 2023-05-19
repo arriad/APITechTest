@@ -10,6 +10,10 @@ namespace ARiad.APITech.Application.Models.Database
     {
         public string UCR { get; set; }
         public int CompanyID { get; set; }
-        public int? ClaimAgeInDays { get; set; }
+        public DateTime? ClaimDate { get; set; }
+        public DateTime? LossDate { get; set; }
+        public string AssuredName { get; set; }
+        public decimal? IncurredLoss { get; set; }
+        public bool Closed { get; set; }
     }
 }

@@ -1,5 +1,4 @@
-{
-  "Claims": [
+ [
     {
       "UCR": "ClaimA",
       "CompanyId": "1",
@@ -16,11 +15,11 @@
       "LossDate": "",
       "AssuredName": "",
       "IncurredLoss": "",
-      "Closed": "0"
+      "Closed": "1"
     },
     {
       "UCR": "ClaimC",
-      "CompanyId": "3",
+      "CompanyId": "2",
       "ClaimDate": "2011-01-05",
       "LossDate": "2010-09-01",
       "AssuredName": "",
@@ -29,12 +28,11 @@
     },
     {
       "UCR": "ClaimD",
-      "CompanyId": "4",
+      "CompanyId": "3",
       "ClaimDate": "",
       "LossDate": "",
       "AssuredName": "",
       "IncurredLoss": "",
-      "Closed": "1"
+      "Closed": "0"
     }
   ]
-}
