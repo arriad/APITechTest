@@ -35,5 +35,32 @@ namespace ARiad.APITech.Infrastructure.Services
 
             return claims.Where(b => b.CompanyID == companyId)?.ToList();
         }
+
+        public async Task<bool> UpdateClaim(Claim claim)
+        {
+            string claimsJson = await File.ReadAllTextAsync("./Claims/Claims.json");
+            List<Claim> claims = JsonConvert.DeserializeObject<List<Claim>>(claimsJson);
+
+           Claim claimRetrieved = claims.FirstOrDefault(b => b.UCR == claim.UCR);
+           
+            if (claimRetrieved == null)
+            {
+                return false;
+            }
+
+            claimRetrieved.CompanyID = claim.CompanyID;
+            claimRetrieved.ClaimDate = claim.ClaimDate;
+            claimRetrieved.AssuredName = claim.AssuredName;
+            claimRetrieved.LossDate = claim.LossDate;
+            claimRetrieved.Closed = claim.Closed;
+            claimRetrieved.IncurredLoss = claim.IncurredLoss;
+            claimRetrieved.LossDate = claim.LossDate;
+
+            claimsJson= JsonConvert.SerializeObject(claims);
+
+            await File.WriteAllTextAsync("./Claims/Claims.json", claimsJson);
+
+            return true;
+        }
     }
 }

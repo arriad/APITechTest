@@ -13,5 +13,6 @@ namespace ARiad.APITech.Application.Interfaces
         Task<Company> GetCompany(int companyId);
         Task<Claim> GetClaim(string claimId);
         Task<List<Claim>> GetClaims(int companyId);
+        Task<bool> UpdateClaim(Claim claim);
     }
 }

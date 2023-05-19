@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ARiad.APITech.Application.Models.Response
 {
-    public class Claim
+    public class ClaimResponse
     {
         public string ClaimId { get; set; }
         public int CompanyID { get; set; }

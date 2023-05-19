@@ -10,19 +10,20 @@ namespace ARiad.APITech.Application.Mappers
 {
     public static class ClaimsMapper
     {
-        public static Response.Claim MapClaim(Database.Claim source)
+        public static Response.ClaimResponse MapClaim(Database.Claim source)
         {
 
-            return new Response.Claim
+            return new Response.ClaimResponse
             {
                  ClaimId=source.UCR,
                   CompanyID=source.CompanyID,
                    ClaimAgeInDays=CalculateNumberOfDaysFromToday(source.ClaimDate)
             };
         }
-        public static List<Response.Claim> MapClaims(List<Database.Claim> source)
+
+        public static List<Response.ClaimResponse> MapClaims(List<Database.Claim> source)
         {
-            List<Response.Claim> claims = new List<Response.Claim>();
+            List<Response.ClaimResponse> claims = new List<Response.ClaimResponse>();
             foreach (Database.Claim claim in source) {
                 claims.Add(MapClaim(claim));
             }
